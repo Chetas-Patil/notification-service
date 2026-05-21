@@ -1,0 +1,15 @@
+http_addr: ":8080"
+notification:
+  email:
+    smtp_host: "localhost"
+    smtp_port: 1025
+    smtp_user: "user"
+    smtp_password: "password"
+    from_address: "noreply@example.com"
+  slack:
+    webhook_url: "https://hooks.slack.com/services/YOUR/WEBHOOK/URL"
+    token: "xoxb-your-token"
+    channel: "#notifications"
+  inapp:
+    database_url: "memory"
+    max_retention: "24h"
